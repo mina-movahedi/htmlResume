@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Movahedi</title>
+    <style>
+    * {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #09bead;
+  --secondary-color: #ace1f5;
+  --complimentary-color: #09bead;
+  --contrast-color: #88bfb5;
+  --light-color: #09bead;
+  --background-color: #042b27;
+}
+
+.container {
+  margin: 0;
+  background: #042b27;
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+.navigation a {
+  margin: 0;
+  font-size: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.navigation {
+  margin: 0;
+  /* position: relative; */
+  left: 0;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+body {
+  margin: 0%;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+#Education {
+  margin: 1rem;
+}
+
+section {
+  margin: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: all ease-in 0.8s;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+/* section > * {
+  margin: auto;
+} */
+
+/* Styles applied on trigger */
+section:target {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+section:target h1 {
+  opacity: 0;
+  animation: 2s fadeIn forwards 0.5s;
+}
+
+#first {
+  background: var(--primary-color);
+}
+#second {
+  background: var(--complimentary-color);
+}
+
+#third {
+  background: var(--contrast-color);
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+	flex-direction: row;
+}
+
+#fourth {
+  background: var(--light-color);
+}
+
+#fifth {
+  background: var(--light-color);
+}
+
+#talks {
+  margin: 1rem;
+}
+
+#publications {
+  margin: 1rem;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.menueItem {
+  color: white;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="navigation">
+  
+            <div class="menueItem">
+                <a href="#first" class="far fa-user"></i>Summary</a>
+            </div>
+        
+            <div class="menueItem">
+                <a href="#second" class="fas fa-briefcase">Education</a>
+            </div>
+        
+            <div class="menueItem">
+                <a href="#third" class="far fa-file">Programming</br>Skills</a>
+            </div>     
+        
+            <div class="menueItem">
+                <a href="#fourth" class="far fa-address-card">Publications</a>
+            </div>
+        
+            <div class="menueItem">
+                <a href="#fifth" class="far fa-address-card">Talks</a>
+            </div>
+
+    </div>
+     <!--/////////////////////////////////////////////////////////////////////////////////////-->
+     <div class= 'container'> 
+        <section id= 'first'>
+            <h1>Mina Movahedi</h1>
+       
+            <h2 style="text-align: center;">Ph.D in Mathematics </br> Java Programmer, Web Programmer</h2>
+       </section>
+        
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+    <section id= 'second'>
+        <ul id="Education">
+            <li>
+                Ph.D. (2010-2015) Analysis, Metric Geometry and Optimization, Alzahra University (Tehran-Iran). 
+            </br>
+                Thesis Title: Optimization on Hadamard spaces
+            </br>
+            </li>
+            <li>
+               M.Sc. (2006-2008) Analysis, C*-Algebras, Alzahra University (Tehran-Iran). 
+            </br>
+                    Thesis Title: The C^*- Algebra of a Function Algebra 
+                </br>   
+            </li>
+            <li>
+                B.Sc. (2002-2006) Pure Mathematics, Isfahan University (Isfahan-Iran).
+            </br>
+            </li>            
+        </ul>
+       </section>
+
+       <!--/////////////////////////////////////////////////////////////////////////////////////-->
+       <section id= 'third' class="skills">
+	   <div><p hidden>0</p></div>
+	   <div>
+        <dl>
+                <dt>Back End</dt>
+                <dd>Java SE(Advanced)</dd>
+                <dd>Hibernate</dd>
+                <dd>Spring</dd>
+                <dd>Kafka</dd>
+                <dd>Camel</dd>
+                <dd>Design Patterns</dd>
+                <dd>JSP</dd>
+                <dd>Servlet</dd>
+        </dl>
+		</div>
+		<div><p hidden>0</p></div>
+		<div>
+        <dl>             
+            <dt>Front End</dt>
+            <dd>React JS</dd>
+            <dd>Javascript</dd>
+            <dd>ES6</dd>
+            <dd>HTML</dd>
+            <dd>Express JS</dd>
+            <dd>Node JS</dd>
+            <dd>Webpack</dd>
+            <dd>Typescript</dd>
+            <br>
+
+            <dt>Database</dt>
+            <dd>Oracle</dd>
+            <dd>PostgreSQL</dd>
+            <dd>MySQL</dd>
+            <dd>Elasticsearch</dd>
+            
+        </dl>
+		</div>
+		<div><p hidden>0</p></div>
+       </section>
+    
+       <!--/////////////////////////////////////////////////////////////////////////////////////-->
+    
+       <section id= 'fourth'>
+        <dl id="publications" >
+            <!-- <dl> -->
+            <dt>ISI Published Papers</dt>
+            <dd> </br>  </dd>
+            <dd>M. Movahedi, D. Behmardi, S. Hosseini, On the Density Theorem for 
+                the Subdifferential of Convex Functions on Hadamard spaces, 
+                Pacific J. Math. Vol. 276, No. 2, (2015) 437- 447. </dd>
+                <dd> </br>  </dd>
+            <dd>M. Movahedi, D. Behmardi, M. Soleimani-Damaneh, On Subdifferential 
+                in Hadamard Spaces, Bull. Iranian Math. Soc. Vol. 42, No. 3, (2016) 707 - 717. </dd>
+                <dd> </br>  </dd>
+            <dt>Published Book</dt>
+            <dd> </br>  </dd>
+            <dd>Teaching Methods of Multiplication and Division (2016)</dd>
+        </dl>
+       </section>
+    
+       <!--/////////////////////////////////////////////////////////////////////////////////////-->
+    
+       <section id = 'fifth'>
+        <dl id="talks">
+            <dt>Talks</dt>
+            
+            <dd>Conjugate functions on metric spaces, The 3rd Seminar on Operator Theory and its Applications Ferdowsi University of Mashhad, (2017).</dd>
+            <dd> </br>  </dd>
+            <dd>Subgradients on Hadamard spaces, IPM, Iran (a single talk) (2016) </dd>
+            <dd> </br>  </dd>
+            <dd>Convex Functions and Subdifferentials on Hadamard Spaces, The 4th seminar on Functional Analysis and its Applications, Ferdowsi University of Mashhad, (2016) </dd>
+            <dd> </br>  </dd>
+            <dd>Dual Problems in Uniquely Geodesic Metric Spaces, the 21th Seminar on Mathematical Analysis and its Applications, Islamic Azad University, Hamedan, (2014). </dd>
+            <dd> </br>  </dd>
+            <dd>Zero Duality Gap on Topological Vector Spaces, International Conference of Operations Research and Optimization, The University of Tehran,( 2013). </dd>
+            <dd> </br>  </dd>
+            <dd>The Duality Theory in Optimization, Alzahra University, (2011) </dd>
+
+        </dl>
+
+       </section>
+
+     </div>
+</body>
+</html>
